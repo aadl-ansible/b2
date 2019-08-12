@@ -1,2 +1,5 @@
 ---
-# defaults file for b2
+ansible_python_interpreter: /usr/bin/python3
+python_pip_package: python3-pip
+
+b2_version: 1.4.0

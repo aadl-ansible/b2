@@ -1,2 +1,10 @@
 ---
-# tasks file for b2
+- name: Make sure PIP is installed
+  apt:
+    name: '{{ python_pip_package }}'
+    state: present
+
+- name: Install B2 CLI via PIP
+  pip:
+    name: b2
+    version: '{{ b2_version }}'
